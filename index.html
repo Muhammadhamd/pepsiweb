@@ -14,14 +14,331 @@
 </head>
 <style>
    
-   .section2 .background{
-    background-image: url(images/Tablet_Background.png);
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+
+}
+.navbar{
+    display: flex;
+justify-content: space-between;
+background-color: rgb(38, 103, 182);
+color: white;
+padding: 10px;
+align-items: center;
+font-family: "Inter";
+position: static;
+}
+.navbar  .listitem{
+        display: flex;
+        align-items: center;
+            width: 60%;
+/* justify-content: space-between; */
+font-family: "Inter";
+font-weight: 600;
+font-size: 16px;
+}
+.listitem .logo{
+    width: 55px;
+    margin: 0 60px 0 10px;
+}
+.listitem .list{
+    display: flex;
+    display: flex;
+width: 316px;
+gap: 25px;
+}
+.listitem .list li{
+    list-style: none;
+}
+.listitem .logo img{
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.listitem .logo img:hover{
+    transform: rotate(360deg);
+    transition: all .2s ease-in-out;
+}
+.navbar h1{
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.background{
+    background-color: black;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+
+}
+.section1 .pepsi-img{}
+.section1 .pepsi-img{
+    width:64%;
+}
+.section1 .pepsi-img img{
+    width: 100%;
+}
+.section1 .content-div{
+    width: 36%;
+    padding: 150px 0 0 0;
+    position: relative;
+right: 100px;
+}
+.section1 .cotent-div .content-img{
+    width: 100%;
+}
+.section1 .cotent-img img{
+    width: 100%;
+}
+.section1 h1{
+    color: white;
+font-family: "inter";
+display: flex;
+align-items: center;
+gap: 10px;
+justify-content: center;
+}
+.section1 .video-div{
+    display: flex;
+gap: 30px;
+justify-content: center;
+margin: 20px 0 0 0;
+}
+.section1 .video-div div{
+    width: 150px;
+}
+.section1 .video-div div img{
+    width: 100%;
+    border-radius: 12px;
+}
+.section1 .video-div div h1{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1030px) {
+    .section1 .content-div {
+width: 33%;
+
+}
+}
+@media screen and (max-width:980px) {
+    .section1 .content-div {
+width: 29%;
+
+}
+}
+@media screen and (max-width:920px) {
+    .section1 .pepsi-img , .section1 .content-div{
+        width: 100%;
+        right: 0;
+    }
+    .section1 .content-div .cotent-img{
+        display: flex;
+        justify-content: center;
+    }
+    .section1 .content-div .cotent-img img {
+width: 50%;
+}
+}
+
+.section2 .background{
+    background-image: url(images/desktop_Background.png);
     background-repeat: no-repeat;
 background-size: cover;
 display: flex;
 justify-content: center;
 gap: 40px;
 padding: 40px 0 0 0;
+flex-wrap: wrap-reverse;
+}
+
+.section2 .background .cold-img{
+    
+width: 30%;
+min-width: 300px;
+}
+.section2 .background .cold-img img{
+    width: 100%;
+}
+.section2 .background .content-img{
+    width: 40%;
+min-width: 328px;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.section2 .background .content-img img{
+width: 83%;
+}
+.section2 .background .content-img .content-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 .background .content-img .content-sec h2{
+    font-size: 21px;
+    font-family: "Inter";
+    color: white;
+    font-weight: 900px;
+}
+.section2 .background .content-img .content-sec button{
+    background: none;
+    color: white;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 700;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 8px 35px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin: 5px 0 0 0;
+}
+
+.section2 .background .content-img .content-sec button:hover{
+    background-color: white;
+    color: rgb(57, 126, 210);
+}
+
+
+.section3{
+    background-color: #265cc5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 25px;
+}
+.section3 .pep-sec3-banner{
+
+    width: 100%;
+    background-image: url(images/PEP_BWP_D_comp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3 .pep-sec3-banner img{
+    width: 300px;
+    position: relative;
+    top: 85%;
+    left: 66.2%;
+}
+.section3 .sec3-thumbnail-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0 0 0;
+}
+ .sec3-thumbnail-div div{
+    width: 95%;
+    background-color: #1a4bab;
+    color: white;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    padding: 0 0 10px 0;
+    font-size: 10px;
+  }
+ .sec3-thumbnail-div div img{
+    width: 100%;
+    margin: 0 0 5px 0;
+ }
+
+
+@media screen and (max-width:1020px){
+    .section3{
+        flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 0;
+    }
+
+    .section3 .sec3-thumbnail-div {
+        
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    }
+
+    .section3 .pep-sec3-banner{
+        height: 110px;
+        min-width: 500px;
+    width: 100%;
+    background-image: url(images/PEP_BWP_D_tablet.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.section3 .pep-sec3-banner img{
+    display: none;
+}
+}
+@media screen and (max-width:662px) {
+    .section2 .background{
+        background-image: url(images/Tablet_Background.png);
+    }
+.navbar h1{
+    display: none;
+}
+.navbar .listitem {
+    width: 100%;
+}
+}
+
+@media screen and (max-width:500px) {
+
+    .section1 h1 {
+    flex-direction: column-reverse;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+
+}
+
+.section1 h1 img{
+    width: 40px;
+}
+
+
+    .section3 .pep-sec3-banner{
+        min-width: 0px;
+    width: 100%;
+    background-image: url(images/PEP_BWP_D_mobile.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (max-width:400px)
+{
+.navbar .listitem {
+    width: 100%;
+justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.section2 .background .content-img img{
+width: 56%;
+}
+.section2 .background .cold-img ,.section2 .background .content-img {
+    width: 100%;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+}
+.section2 .background .cold-img img{
+    width: 60%;
+}
+.section2 .background .content-img .content-sec h2 {
+    font-size: 57%;
+}
 }
 
 </style>
@@ -68,7 +385,26 @@ padding: 40px 0 0 0;
                 </div>
                 <div class="content-img">
                     <img src="images/Nitro_Logo@3x.png" alt="">
+                    <div class="content-sec">
+                        <h2>SMOOTH, CREAMY, DELICIOUS</h2>
+                       <button>Learn more</button>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="sec3-thumbnail-div">
+                <div>
+                    <img src="images/Thumbnail_2.jpg" alt="">
+                    <h2>BETTER WITH PEPSI | RIBS</h2>
+                </div>
+                <div>
+                    <img src="images/Thumbnail.jpg" alt="">
+                    <h2>BETTER WITH PEPSI | RIBS</h2>
+                </div>
+            </div>
+            <div class="pep-sec3-banner">
+                <img src="images/tag-line@3x.png" alt="">
             </div>
         </div>
     </div>
