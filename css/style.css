@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+
+}
+.navbar{
+    display: flex;
+justify-content: space-between;
+background-color: blue;
+color: white;
+padding: 10px;
+align-items: center;
+font-family: "Inter";
+}
+.navbar  .listitem{
+        display: flex;
+        align-items: center;
+            width: 60%;
+/* justify-content: space-between; */
+font-family: "Inter";
+font-weight: 600;
+font-size: 16px;
+}
+.listitem .logo{
+    width: 55px;
+    margin: 0 60px 0 10px;
+}
+.listitem .list{
+    display: flex;
+    display: flex;
+width: 316px;
+gap: 25px;
+}
+.listitem .list li{
+    list-style: none;
+}
+.listitem .logo img{
+    width: 100%;
+}
+.navbar h1{
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.background{
+    background-color: black;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+
+}
+.section1 .pepsi-img{}
+.section1 .pepsi-img{
+    width:64%;
+}
+.section1 .pepsi-img img{
+    width: 100%;
+}
+.section1 .content-div{
+    width: 36%;
+    padding: 150px 0 0 0;
+    position: relative;
+right: 100px;
+}
+.section1 .cotent-div .content-img{
+    width: 100%;
+}
+.section1 .cotent-img img{
+    width: 100%;
+}
+.section1 h1{
+    color: white;
+font-family: "inter";
+display: flex;
+align-items: center;
+gap: 10px;
+justify-content: center;
+}
+.section1 .video-div{
+    display: flex;
+gap: 30px;
+justify-content: center;
+margin: 20px 0 0 0;
+}
+.section1 .video-div div{
+    width: 150px;
+}
+.section1 .video-div div img{
+    width: 100%;
+    border-radius: 12px;
+}
+.section1 .video-div div h1{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1030px) {
+    .section1 .content-div {
+width: 33%;
+
+}
+}
+@media screen and (max-width:980px) {
+    .section1 .content-div {
+width: 29%;
+
+}
+}
+@media screen and (max-width:920px) {
+    .section1 .pepsi-img , .section1 .content-div{
+        width: 100%;
+        right: 0;
+    }
+    .section1 .content-div .cotent-img{
+        display: flex;
+        justify-content: center;
+    }
+    .section1 .content-div .cotent-img img {
+width: 50%;
+}
+}
+
+.section2 .background{
+    background-image: url(images/Tablet_Background.png);
+    background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+gap: 40px;
+padding: 40px 0 0 0;
+}
+
+.section2 .background .cold-img{
+    
+width: 30%;
+}
+.section2 .background .cold-img img{
+    width: 100%;
+}
+.section2 .background .content-img{
+    width: 40%;
+    display: flex;
+align-items: center;
+}
+.section2 .background .content-img img{
+width: 100%;
+}
+.section2 .background .content-img h1{}
+.section2 .background .content-img button{
+    color: white;
+    font-family: "inter";
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:662px) {
+.navbar h1{
+    display: none;
+}
+.navbar .listitem {
+    width: 100%;
+}
+}
+@media screen and (max-width:400px)
+{
+.navbar .listitem {
+    width: 100%;
+justify-content: center;
+    flex-wrap: wrap;
+   
+}
+}
