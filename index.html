@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
+    .main-container{
+        max-width:1400px ;
+    }
     .section2 .background{
     background-image: url(images/desktop_Background.png);
     background-repeat: no-repeat;
@@ -26,13 +29,47 @@ flex-wrap: wrap-reverse;
 
     .section3 .pep-sec3-banner{
 
-width: 100%;
+width: 68%;
 background-image: url(images/PEP_BWP_D_comp.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 }
-   @media screen and (max-width:1020px){
+.section5{
+    background-image: url(images/sec5twil-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 63px 0 0 0;
+    flex-wrap: wrap-reverse;
+}
+.section5 .canediv{
+    width: 60%;
+    min-width: 350px;
+}
+.section5 .canediv img{
+    width: 95%;
+}
+.section5 .headline-div .img-formb{
+    display: none;
+}
+.section5 .headline-div{
+    width: 35%;
+    margin: 147px 0 0 0;
+    min-width: 350px;
 
+}
+.section5 .headline-div img{
+    width: 100%;
+}
+
+
+
+   @media screen and (max-width:1020px){
+    .section3{
+        flex-wrap: wrap-reverse;
+    padding: 0;
+
+    }
     .section3 .pep-sec3-banner{
         height: 110px;
         min-width: 500px;
@@ -40,7 +77,44 @@ background-size: cover;
     background-image: url(images/PEP_BWP_D_tablet.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-}}
+
+
+}
+
+.section3 .sec3-thumbnail-div{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+}
+
+@media screen and (max-width:870px){
+    .section5{
+    justify-content: center;
+    background-image: url(images/sec5twil-bg-mb.jpg);
+}
+.section5 .canediv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section5 .canediv img{
+    width: 40%;
+}
+.section5 .headline-div{
+    margin: 20px 0 0 0;
+    min-width: 150px;
+    width: 40%;
+}
+.section5 .headline-div .img-fordt{
+    display: none;
+    
+}
+.section5 .headline-div .img-formb{
+    display: block;
+    width: 100%;
+}
+}
    @media screen and (max-width:662px) {
     .section2 .background{
         background-image: url(images/Tablet_Background.png);
@@ -54,7 +128,43 @@ background-image: url(images/PEP_BWP_D_mobile.jpg);
 background-repeat:no-repeat;
 background-size: cover;
 }
+
+
+.section5 .headline-div , .section5 .canediv{
+    min-width: 0px;
 }
+}
+
+
+/* section 6 css */
+
+    .section6 {
+        background-image: url(images/sec6bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        display: flex;
+    }
+    .section6 .caneimg-div {
+        webkit-animation: .9s cubic-bezier(.455, .03, .515, .955) .5s forwards elastic-ease-out-left, .9s cubic-bezier(.215, .61, .355, 1) .5s forwards linear-fade-in; */
+    animation: .9s cubic-bezier(.455, .03, .515, .955) .5s forwards elastic-ease-out-left, .9s cubic-bezier(.215, .61, .355, 1) .5s forwards linear-fade-in;
+    }
+    .section6 .caneimg-div img{
+        max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    }
+    .section6 .content-div{
+
+    }
+    .section6 .content-div h1{}
+    .section6 .content-div p{}
 </style>
 <body>
     <div class="main-container">
@@ -120,6 +230,40 @@ background-size: cover;
             <div class="pep-sec3-banner">
                 <img src="images/tag-line@3x.png" alt="">
             </div>
+        </div>
+        <!-- <div class="section4">
+            <div class="background3">
+                <div class="headline-div">
+                    <img src="images/sec4-headline.png" alt="">
+                </div>
+                <div class="caneb-div">
+                    <img src="images/sec2bg1.png" alt="">
+                </div>
+            </div>
+        </div> updated will be soon -->
+        <div class="section5">
+            <div class="canediv">
+                <img src="images/sec5twil-can.png" alt="">
+            </div>
+            <div class="headline-div">
+                <img class="img-fordt" src="images/sec5twil-header-dt.png" alt="">
+                <img class="img-formb" src="images/sec5twil-header-mb.png" alt="">
+            </div>
+        </div>
+        <div class="section6">
+            <div class="content-div">
+                <h1>ALL YOUR
+                    FAVORITE FLAVORS.
+                    ALL RIGHT HERE.</h1>
+                <p>
+                    Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.
+                </p>
+                <button>learn more</button>
+            </div>
+            <div class="caneimg-div">
+                <img src="images/sec6promotion1-hero_v3.png" alt="">
+            </div>
+
         </div>
     </div>
 </body>

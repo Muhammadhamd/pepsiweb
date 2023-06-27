@@ -202,13 +202,7 @@ width: 83%;
     justify-content: space-between;
     padding: 0 0 0 25px;
 }
-.section3 .pep-sec3-banner{
 
-    width: 100%;
-    background-image: url(images/PEP_BWP_D_comp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .section3 .pep-sec3-banner img{
     width: 300px;
     position: relative;
